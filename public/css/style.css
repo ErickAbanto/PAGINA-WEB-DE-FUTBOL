@@ -1,0 +1,353 @@
+/* =========================================================
+   BASE GENERAL
+========================================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body.page {
+  background: linear-gradient(to bottom right, #eaf4fc, #f0fff5);
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Contenedor general */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER Y NAVEGACIÓN
+========================================================= */
+.header {
+  background: #002b5b;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+  padding: 1.2rem 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar__logo-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.navbar__logo-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+}
+
+.navbar__links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navbar__link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar__link:hover {
+  color: #ffc107;
+}
+
+.navbar__toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.main {
+  padding-top: 150px; /* Aumentado para que navbar no tape los títulos */
+}
+
+/* =========================================================
+   SECCIONES GENERALES
+========================================================= */
+.section {
+  background: rgba(8, 172, 117, 0.9);
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 18px;
+  border: 2px solid #c7e0ee;
+  box-shadow: 0 8px 16px rgba(30, 255, 1, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.section__titulo {
+  text-align: center;
+  color: #002b5b;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.section__titulo::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: #ffc107;
+  margin: 10px auto 0;
+  border-radius: 3px;
+}
+
+/* =========================================================
+   INICIO
+========================================================= */
+.inicio__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.inicio__titulo {
+  font-size: 2.2rem;
+  color: #002b5b;
+  margin-bottom: 1rem;
+}
+
+.inicio__imagen {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid #ffc107;
+  margin: 1rem 0;
+  transition: transform 0.3s ease;
+}
+
+.inicio__imagen:hover {
+  transform: scale(1.05) rotate(10deg);
+}
+
+.inicio__btn {
+  display: inline-block;
+  background: #002b5b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.inicio__btn:hover {
+  background: #0056b3;
+}
+
+/* =========================================================
+   HISTORIA GENERAL
+========================================================= */
+.historia__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.historia__contenido {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.historia__texto-box {
+  flex: 1 1 50%;
+}
+
+.historia__texto {
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.historia__imagen-box {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.historia__imagen {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  border: 2px solid #e0e9f2;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================================================
+   CONTINENTES
+========================================================= */
+.habilidades__container-general {
+  display: grid;
+  gap: 4rem; /* Mayor separación entre los contenedores */
+}
+
+.continente {
+  background: #fff;
+  border-left: 6px solid #ccc;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12); /* Más sombra para resaltar */
+  margin-bottom: 4rem;
+}
+
+.continente--europa { border-left-color: #004aad; }
+.continente--america { border-left-color: #ff2e00; }
+.continente--asia { border-left-color: #ffb703; }
+.continente--africa { border-left-color: #008037; }
+.continente--oceania { border-left-color: #00b4d8; }
+
+.continente__titulo {
+  font-size: 1.3rem;
+  color: #002b5b;
+  margin-bottom: 1.2rem;
+}
+
+.continente__texto {
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+
+.continente__imagen {
+  width: 400px;
+  border-radius: 10px;
+  margin: 1.8rem auto 0 auto; 
+  border: 2px solid #e3ebf2;
+  display: block; 
+}
+
+/* =========================================================
+   MUNDIALES
+========================================================= */
+.mundiales__container {
+  text-align: center;
+}
+
+.mundiales__texto {
+  text-align: justify;
+  margin-bottom: 1.5rem;
+  background: #f9fcff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid #cce0f0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.mundiales__lista ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem auto 2rem;
+  text-align: left;
+  max-width: 600px;
+}
+
+.mundiales__lista li {
+  background: #ffffff;
+  border-left: 5px solid #ffc107;
+  margin: 0.5rem 0;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.mundiales__lista li:hover {
+  transform: translateX(5px);
+}
+
+.mundiales__imagen {
+  width: 250px;
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  border: 3px solid #ffc107;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+.footer {
+  background: #002b5b;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-top: 3px solid #ffc107;
+  font-size: 0.9rem;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media (max-width: 768px) {
+  .navbar__links {
+    display: none;
+    flex-direction: column;
+    background: #002b5b;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .navbar__links.active {
+    display: flex;
+  }
+
+  .navbar__toggle {
+    display: block;
+  }
+
+  .historia__contenido {
+    flex-direction: column;
+  }
+
+  .historia__imagen {
+    max-width: 100%;
+  }
+
+  .mundiales__lista ul {
+    max-width: 100%;
+  }
+
+  .mundiales__imagen {
+    width: 200px;
+  }
+}

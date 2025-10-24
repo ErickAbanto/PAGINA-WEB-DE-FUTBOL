@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Historia del Fútbol</title>
+  <link rel="stylesheet" href="/public/css/style.css" />
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.querySelector(".navbar__toggle");
+      const links = document.querySelector(".navbar__links");
+      toggle.addEventListener("click", () => {
+        links.classList.toggle("active");
+      });
+    });
+  </script>
+</head>
+
+<body class="page">
+
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="navbar container">
+      <div class="navbar__logo">
+        <img src="public/imgs/logo-principal.jpg" alt="Balón de fútbol" class="navbar__logo-img" />
+        <span class="navbar__logo-text">Historia del Fútbol</span>
+      </div>
+      <button class="navbar__toggle" aria-label="Abrir menú">☰</button>
+      <ul class="navbar__links">
+        <li><a href="#inicio" class="navbar__link">Inicio</a></li>
+        <li><a href="#historia" class="navbar__link">Historia</a></li>
+        <li><a href="#continentes" class="navbar__link">Continentes</a></li>
+        <li><a href="#mundiales" class="navbar__link">Mundiales</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="main">
+    <!-- INICIO -->
+    <section id="inicio" class="section inicio">
+      <div class="inicio__container">
+        <h1 class="inicio__titulo">El Deporte Más Popular del Mundo</h1>
+        <img src="public/imgs/balon.webp" alt="Balón de fútbol" class="inicio__imagen" />
+        <a href="#historia" class="inicio__btn">Descubre su historia</a>
+      </div>
+    </section>
+
+    <!-- HISTORIA GENERAL -->
+    <section id="historia" class="section historia">
+      <div class="historia__container container">
+        <h2 class="historia__titulo section__titulo">Historia del Fútbol</h2>
+        <div class="historia__contenido">
+          <div class="historia__texto-box">
+            <p class="historia__texto">
+              El fútbol tiene sus raíces en juegos de pelota practicados desde la antigüedad en diferentes culturas. En
+              China, alrededor del siglo III a.C., se jugaba al Cuju, un juego en el que se pateaba una pelota de cuero
+              hacia una pequeña red, considerado el primer antecedente del fútbol moderno. En Grecia y Roma existían
+              juegos similares, como el Episkyros y el Harpastum, que consistían en equipos enfrentados intentando
+              llevar una pelota a determinada zona del campo. Durante la Edad Media en Europa, especialmente en
+              Inglaterra, surgieron los llamados “mob football”, partidos improvisados entre pueblos y aldeas, con
+              cientos de jugadores y reglas casi inexistentes, siendo muy violentos y a menudo prohibidos por las
+              autoridades. La formalización del fútbol comenzó en el siglo XIX en Inglaterra, cuando en 1863 se fundó la
+              Football Association (FA), estableciendo un conjunto de reglas que diferenciaron el fútbol del rugby y
+              marcaron el inicio del deporte organizado como lo conocemos hoy.
+            </p>
+          </div>
+          <div class="historia__imagen-box">
+            <img src="public/imgs/imagen-historia.webp" alt="Historia del fútbol" class="historia__imagen" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTINENTES -->
+    <section id="continentes" class="section container">
+      <h2 class="section__titulo">Historia del Fútbol por Continentes</h2>
+      <div class="habilidades__container-general">
+        <div class="continente continente--europa">
+          <h3 class="continente__titulo">Europa</h3>
+          <p class="continente__texto">
+         El fútbol moderno tiene sus raíces en Europa, particularmente en Inglaterra. En 1863, se fundó la Football Association en Londres, estableciendo un conjunto de reglas que diferenciaron el fútbol del rugby. La creación de la Copa FA en 1871 y el primer partido internacional entre selecciones nacionales en 1873 entre Inglaterra y Escocia marcaron hitos importantes en la consolidación del deporte. La UEFA, fundada en 1954, organiza las principales competiciones europeas, como la Liga de Campeones de la UEFA, que ha elevado el nivel del fútbol en el continente.
+          </p>
+          <img src="public/imgs/europa.webp" alt="Fútbol en Europa" class="continente__imagen" />
+        </div>
+
+        <div class="continente continente--america">
+          <h3 class="continente__titulo">América</h3>
+          <p class="continente__texto">
+         El fútbol llegó a América en la segunda mitad del siglo XIX, traído por marineros e inmigrantes europeos. En América del Sur, países como Argentina, Brasil y Uruguay adoptaron rápidamente el deporte, y en 1901 se jugó el primer partido internacional entre selecciones sudamericanas, Argentina y Uruguay. La Copa América, fundada en 1916, es el torneo de selecciones más antiguo del continente. En América del Norte, el fútbol ha crecido en popularidad, con la Major League Soccer (MLS) en Estados Unidos y la Liga MX en México siendo las principales competiciones nacionales.
+          </p>
+          <img src="img/america-futbol.jpg" alt="Fútbol en América" class="continente__imagen" />
+        </div>
+<div class="continente continente--asia">
+  <h3 class="continente__titulo">Asia</h3>
+  <p class="continente__texto">
+    El fútbol en Asia tiene una historia marcada por influencias coloniales y el desarrollo de ligas nacionales. La Confederación Asiática de Fútbol (AFC) fue fundada en 1954 para promover el deporte en el continente. Países como Japón y Corea del Sur han sido pioneros en el desarrollo del fútbol profesional en Asia. La AFC organiza competiciones como la Liga de Campeones de la AFC, que ha elevado el nivel del fútbol en la región.
+  </p>
+  <img src="img/asia-futbol.jpg" alt="Fútbol en Asia" class="continente__imagen" />
+</div>
+
+        <div class="continente continente--africa">
+          <h3 class="continente__titulo">África</h3>
+          <p class="continente__texto">
+           El fútbol llegó a África en el siglo XIX, introducido por colonizadores europeos. A pesar de las dificultades políticas y sociales, el deporte creció en popularidad. En 1957, se fundó la Confederación Africana de Fútbol (CAF), que organiza la Copa Africana de Naciones, el principal torneo de selecciones del continente. Países como Nigeria, Camerún y Egipto han sido exitosos en competiciones internacionales, y el fútbol africano continúa siendo una fuente de orgullo y unidad en la región.
+          </p>
+          <img src="img/africa-futbol.jpg" alt="Fútbol en África" class="continente__imagen" />
+        </div>
+
+        <div class="continente continente--oceania">
+          <h3 class="continente__titulo">Oceanía</h3>
+          <p class="continente__texto">
+           El fútbol en Oceanía se desarrolló a finales del siglo XIX, traído por colonos británicos. En 1966, se fundó la Confederación de Fútbol de Oceanía (OFC) para promover el deporte en la región. Australia, Nueva Zelanda y Papúa Nueva Guinea son los países más destacados en el fútbol oceánico. Australia fue parte de la OFC hasta 2006, cuando se trasladó a la Confederación Asiática de Fútbol para mejorar su desarrollo futbolístico.
+          </p>
+          <img src="img/oceania-futbol.jpg" alt="Fútbol en Oceanía" class="continente__imagen" />
+        </div>
+      </div>
+    </section>
+
+    <!-- MUNDIALES -->
+    <section id="mundiales" class="section container">
+      <div class="mundiales__container">
+        <h2 class="section__titulo">Mundiales</h2>
+        <p class="mundiales__texto">Aquí puedes consultar los campeonatos más importantes del fútbol mundial.</p>
+        <div class="mundiales__lista">
+          <ul>
+            <li>Mundial 1930 - Uruguay</li>
+            <li>Mundial 1934 - Italia</li>
+            <li>Mundial 1938 - Francia</li>
+            <li>Mundial 1950 - Brasil</li>
+            <li>Mundial 1954 - Suiza</li>
+          </ul>
+        </div>
+        <img src="img/mundial.jpg" alt="Mundial de Fútbol" class="mundiales__imagen" />
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>© 2025 Historia del Fútbol | Desarrollado con ❤️ y pasión por el deporte</p>
+    </footer>
+  </div>
+</body>
+
+</html>
